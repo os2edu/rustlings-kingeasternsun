@@ -1,14 +1,25 @@
+/*
+ * @Description: fix struct1
+ * @Version: 2.0
+ * @Author: kingeasternsun
+ * @Date: 2022-11-07 03:42:40
+ * @LastEditors: kingeasternsun
+ * @LastEditTime: 2022-11-07 09:03:03
+ * @FilePath: /rustlings-kingeasternsun/exercises/structs/structs1.rs
+ */
 // structs1.rs
 // Address all the TODOs to make the tests pass!
 // Execute `rustlings hint structs1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 struct ColorClassicStruct {
-    // TODO: Something goes here
+    // Something goes here
+    red:i32,
+    green:i32,
+    blue:i32,
+
 }
 
-struct ColorTupleStruct(/* TODO: Something goes here */);
+struct ColorTupleStruct(i32,i32,i32);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
@@ -19,8 +30,8 @@ mod tests {
 
     #[test]
     fn classic_c_structs() {
-        // TODO: Instantiate a classic c struct!
-        // let green =
+        // Instantiate a classic c struct!
+        let green = ColorClassicStruct{red:0, green:255, blue:0};
 
         assert_eq!(green.red, 0);
         assert_eq!(green.green, 255);
@@ -29,8 +40,8 @@ mod tests {
 
     #[test]
     fn tuple_structs() {
-        // TODO: Instantiate a tuple struct!
-        // let green =
+        // nstantiate a tuple struct!
+        let green = ColorTupleStruct(0, 255, 0);
 
         assert_eq!(green.0, 0);
         assert_eq!(green.1, 255);
@@ -39,8 +50,8 @@ mod tests {
 
     #[test]
     fn unit_structs() {
-        // TODO: Instantiate a unit-like struct!
-        // let unit_like_struct =
+        // Instantiate a unit-like struct!
+        let unit_like_struct = UnitLikeStruct;
         let message = format!("{:?}s are fun!", unit_like_struct);
 
         assert_eq!(message, "UnitLikeStructs are fun!");

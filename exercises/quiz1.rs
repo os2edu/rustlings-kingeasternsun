@@ -1,3 +1,12 @@
+/*
+ * @Description: fix quiz1
+ * @Version: 2.0
+ * @Author: kingeasternsun
+ * @Date: 2022-11-07 03:42:40
+ * @LastEditors: kingeasternsun
+ * @LastEditTime: 2022-11-07 06:54:40
+ * @FilePath: /rustlings-kingeasternsun/exercises/quiz1.rs
+ */
 // quiz1.rs
 // This is a quiz for the following sections:
 // - Variables
@@ -10,10 +19,15 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(n:i32)->i32 {
+    if n <= 40{
+        2*n
+    }else{
+        n
+    }
+}
 
 // Don't modify this function!
 #[test]

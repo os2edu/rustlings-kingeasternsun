@@ -1,16 +1,26 @@
+/*
+ * @Description: fix if2
+ * @Version: 2.0
+ * @Author: kingeasternsun
+ * @Date: 2022-11-07 03:42:40
+ * @LastEditors: kingeasternsun
+ * @LastEditTime: 2022-11-07 06:48:38
+ * @FilePath: /rustlings-kingeasternsun/exercises/if/if2.rs
+ */
 // if2.rs
 
 // Step 1: Make me compile!
 // Step 2: Get the bar_for_fuzz and default_to_baz tests passing!
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
-    } else {
-        1
+    } else if fizzish == "fuzz" {
+        "bar"
+    }else{
+        "baz"
     }
 }
 

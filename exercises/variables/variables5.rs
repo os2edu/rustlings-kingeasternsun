@@ -4,7 +4,7 @@
  * @Author: kingeasternsun
  * @Date: 2022-11-07 03:42:40
  * @LastEditors: kingeasternsun
- * @LastEditTime: 2022-11-07 06:33:00
+ * @LastEditTime: 2022-11-07 06:37:16
  * @FilePath: /rustlings-kingeasternsun/exercises/variables/variables5.rs
  */
 // variables5.rs
@@ -14,6 +14,6 @@
 fn main() {
     let number = "T-H-R-E-E"; // don't change this line
     println!("Spell a Number : {}", number);
-    number = 3; // don't rename this variable
+    let number = 3; // don't rename this variable
     println!("Number plus two is : {}", number + 2);
 }

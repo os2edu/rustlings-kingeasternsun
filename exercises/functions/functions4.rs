@@ -1,3 +1,12 @@
+/*
+ * @Description: fix fn4
+ * @Version: 2.0
+ * @Author: kingeasternsun
+ * @Date: 2022-11-07 03:42:40
+ * @LastEditors: kingeasternsun
+ * @LastEditTime: 2022-11-07 06:42:16
+ * @FilePath: /rustlings-kingeasternsun/exercises/functions/functions4.rs
+ */
 // functions4.rs
 // Execute `rustlings hint functions4` or use the `hint` watch subcommand for a hint.
 
@@ -7,14 +16,13 @@
 // in the signatures for now. If anything, this is a good way to peek ahead
 // to future exercises!)
 
-// I AM NOT DONE
 
 fn main() {
     let original_price = 51;
     println!("Your sale price is {}", sale_price(original_price));
 }
 
-fn sale_price(price: i32) -> {
+fn sale_price(price: i32) -> i32{
     if is_even(price) {
         price - 10
     } else {

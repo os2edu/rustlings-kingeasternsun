@@ -1,3 +1,12 @@
+/*
+ * @Description: fix move1
+ * @Version: 2.0
+ * @Author: kingeasternsun
+ * @Date: 2022-11-07 03:42:40
+ * @LastEditors: kingeasternsun
+ * @LastEditTime: 2022-11-07 07:47:24
+ * @FilePath: /rustlings-kingeasternsun/exercises/move_semantics/move_semantics1.rs
+ */
 // move_semantics1.rs
 // Execute `rustlings hint move_semantics1` or use the `hint` watch subcommand for a hint.
 
@@ -6,7 +15,7 @@
 fn main() {
     let vec0 = Vec::new();
 
-    let vec1 = fill_vec(vec0);
+    let mut vec1 = fill_vec(vec0);
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
 

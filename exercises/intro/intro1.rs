@@ -1,3 +1,12 @@
+/*
+ * @Description: 
+ * @Version: 2.0
+ * @Author: kingeasternsun
+ * @Date: 2022-11-07 03:42:40
+ * @LastEditors: kingeasternsun
+ * @LastEditTime: 2022-11-07 04:06:01
+ * @FilePath: /rustlings-kingeasternsun/exercises/intro/intro1.rs
+ */
 // intro1.rs
 // About this `I AM NOT DONE` thing:
 // We sometimes encourage you to keep trying things on a given exercise, even
@@ -9,10 +18,9 @@
 // when you change one of the lines below! Try adding a `println!` line, or try changing
 // what it outputs in your terminal. Try removing a semicolon and see what happens!
 
-// I AM NOT DONE
-
 fn main() {
-    println!("Hello and");
+    println!("Hello an World");
+    println!("KingEasternSun");
     println!(r#"       welcome to...                      "#);
     println!(r#"                 _   _ _                  "#);
     println!(r#"  _ __ _   _ ___| |_| (_)_ __   __ _ ___  "#);

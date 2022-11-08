@@ -18,7 +18,6 @@
 // - The output element is going to be a Vector of strings.
 // No hints this time!
 
-
 pub enum Command {
     Uppercase,
     Trim,
@@ -28,18 +27,16 @@ pub enum Command {
 mod my_module {
     use super::Command;
 
-    // TODO: Complete the function signature!
-    pub fn transformer(input: Vec<(String,Command)>) -> Vec<String> {
-        // TODO: Complete the output declaration!
+    // Complete the function signature!
+    pub fn transformer(input: Vec<(String, Command)>) -> Vec<String> {
+        // Complete the output declaration!
         let mut output = vec![];
         for (string, command) in input.iter() {
-            // TODO: Complete the function body. You can do it!
-            let r = 
-
-            output.push(match command {
+            // Complete the function body. You can do it!
+            let r = output.push(match command {
                 Command::Uppercase => string.to_uppercase(),
                 Command::Trim => string.trim().to_string(),
-                Command::Append(n) => string.to_string()+&"bar".repeat(*n),
+                Command::Append(n) => string.to_string() + &"bar".repeat(*n),
             });
         }
         output
@@ -48,9 +45,9 @@ mod my_module {
 
 #[cfg(test)]
 mod tests {
-    // TODO: What do we have to import to have `transformer` in scope?
-    use my_module::transformer;
+    // What do we have to import to have `transformer` in scope?
     use super::Command;
+    use my_module::transformer;
 
     #[test]
     fn it_works() {
@@ -60,9 +57,9 @@ mod tests {
             ("foo".into(), Command::Append(1)),
             ("bar".into(), Command::Append(5)),
         ]);
-        assert_eq!(&output[0], "HELLO");
-        assert_eq!(&output[1], "all roads lead to rome!");
-        assert_eq!(&output[2], "foobar");
-        assert_eq!(&output[3], "barbarbarbarbarbar");
+        assert_eq!(output[0], "HELLO");
+        assert_eq!(output[1], "all roads lead to rome!");
+        assert_eq!(output[2], "foobar");
+        assert_eq!(output[3], "barbarbarbarbarbar");
     }
 }
